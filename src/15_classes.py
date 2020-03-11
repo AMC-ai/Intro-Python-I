@@ -3,6 +3,11 @@
 
 # YOUR CODE HERE
 
+# class LatLon :
+#     def __init__(self, lat, lon):
+#         self.lat = lat
+#         self.lon = lon
+
 
 class LatLon:
     def __init__(self, lat: float = None, lon: float = None):
@@ -21,6 +26,11 @@ class LatLon:
 # constructor. It should inherit from LatLon. Look up the `super` method.
 
 # YOUR CODE HERE
+
+# class waypoint(LatLon):
+#     def __init__(self, name, lat, lon):
+#         super().__init__(lat, lon)
+#         self.name = name
 
 
 class WayPoint(LatLon):
@@ -43,6 +53,12 @@ class WayPoint(LatLon):
 
 # YOUR CODE HERE
 
+# class class GeoCache(WayPoint):
+#     def __init__(self, name, difficulty, size, lat, lon):
+#         super().__init__(name, lat, lon)
+#         self.size = size
+#         self.difficulty = difficulty
+
 
 class GeoCache(WayPoint):
     def __init__(
@@ -53,7 +69,7 @@ class GeoCache(WayPoint):
         lat: float = None,
         lon: float = None,
     ):
-        """Class for representaing Geocache data. Inherits from WayPoint.
+        """Class for representing Geocache data. Inherits from WayPoint.
 
         :param WayPoint (class) : Parent class.
         :param name       [str] : Name of the geocache, defaults to None
