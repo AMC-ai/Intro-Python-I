@@ -9,6 +9,8 @@ name = "pypi"
 pylint = "*"
 autopep8 = "*"
 rope = "*"
+jupyter = "*"
+notebook = "*"
 
 [requires]
 python_version = "3"
